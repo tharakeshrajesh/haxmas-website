@@ -1,0 +1,26 @@
+---
+import { Image } from 'astro:assets';
+import FormattedDate from '../components/FormattedDate.astro';
+
+// Access the post data passed by Astro
+const { content } = Astro.props;
+const { title, description, pubDate, heroImage } = content.data;
+---
+
+<div class="post-page page-shell">
+  <article class="post">
+    <header>
+      <h1>{title}</h1>
+      <p>{description}</p>
+      {heroImage && <Image src={heroImage} format="webp" alt={title} />}
+      <p>
+        <FormattedDate date={pubDate} />
+      </p>
+    </header>
+
+    <div class="body">
+      <slot />
+    </div>
+    <a class="btn" href="/posts">Back to Posts</a>
+  </article>
+</div>

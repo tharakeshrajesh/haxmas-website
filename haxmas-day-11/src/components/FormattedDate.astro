@@ -1,0 +1,9 @@
+---
+const { date } = Astro.props;
+if (!date) return null;
+const d = date instanceof Date ? date : new Date(date);
+---
+
+<time datetime={d.toISOString()}>
+  {d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
+</time>

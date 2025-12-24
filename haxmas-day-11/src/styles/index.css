@@ -1,0 +1,60 @@
+:root {
+  --max-width: 800px;
+  --text: #222;
+  --accent: rgb(147, 0, 0);
+  --bg: #e1ffef;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Dancing Script', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* Homepage container */
+.page-shell {
+  text-align: center;
+  max-width: var(--max-width);
+  padding: 60px 40px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* Page header */
+.page-header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.page-header .tagline {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: var(--accent);
+}
+
+/* See Posts button */
+.posts-link {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 1.2rem;
+  background-color: var(--accent);
+  color: #fff;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.posts-link:hover {
+  background-color: darkred;
+  transform: scale(1.05);
+}

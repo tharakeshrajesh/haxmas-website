@@ -1,0 +1,50 @@
+/* global.css */
+:root {
+  --max-width: 800px;
+  --text: #222;
+  --muted-2: #888;
+}
+
+/* Add any global styles you want */
+body {
+  margin: 0;
+  background-color: #e1ffef;
+  color: var(--text);
+}
+
+a {
+  color: rgb(147, 0, 0);
+  
+  text-decoration: none;
+}
+
+article {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 16px;
+    padding: 32px 24px 40px;
+    display: inline-block;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.posts-page {
+  display: flex;
+  flex-direction: column;      /* stack posts vertically */
+  align-items: center;         /* center horizontally */
+  gap: 30px;                   /* space between posts */
+  padding: 40px 20px;
+}
+
+.btn {
+    text-align: center;
+    color: rgb(147, 0, 0);
+    border-radius: 16px;
+    padding: 10px 24px 10px;
+    display: inline-block;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    background-color: rgb(255, 255, 255);
+}
+
+* {
+    font-family: 'Dancing Script', cursive;
+}
